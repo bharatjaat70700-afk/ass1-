@@ -1,145 +1,89 @@
-/* ===== Global Styles ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-    background: linear-gradient(135deg, #4e73df, #1cc88a);
-    min-height: 100vh;
-    padding: 30px;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  margin: 0;
+  padding: 20px;
+  color: #333;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff;
+.title {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card.full {
+  width: 740px;
+  margin: 20px auto;
 }
 
 h2 {
-    margin: 20px 0 10px;
-    color: #fff;
-}
-
-/* ===== Form Styling ===== */
-form {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
+  margin-top: 0;
 }
 
 label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 5px;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
 }
 
-textarea {
-    resize: none;
-    height: 80px;
-}
-
-/* ===== Buttons ===== */
 button {
-    padding: 8px 14px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s ease;
-    margin-right: 8px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #6a5cff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-button[type="submit"] {
-    background-color: #4e73df;
-    color: white;
+button:hover {
+  opacity: 0.9;
 }
 
-button[type="submit"]:hover {
-    background-color: #2e59d9;
+.btn-group {
+  display: flex;
+  gap: 10px;
 }
 
-#clearAllBtn {
-    background-color: #e74a3b;
-    color: white;
+.secondary {
+  background: #4caf50;
 }
 
-#clearAllBtn:hover {
-    background-color: #c0392b;
+.danger {
+  background: #f44336;
 }
 
-#addSampleBtn {
-    background-color: #f6c23e;
-    color: #333;
+ul {
+  padding-left: 20px;
 }
 
-#addSampleBtn:hover {
-    background-color: #dda20a;
+li {
+  background: #f1f1f1;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
 }
-
-/* ===== Event Section ===== */
-#eventContainer {
-    margin-top: 20px;
-}
-
-.empty-state {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    font-style: italic;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Event Card Style (for future JS use) */
-.event-card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease;
-}
-
-.event-card:hover {
-    transform: translateY(-3px);
-}
-
-/* ===== DOM Demo Section ===== */
-#demoContent {
-    margin-top: 15px;
-    padding: 15px;
-    background: #ffffff;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
-    form {
-        width: 100%;
-    }
-}
-    
-    
-]
